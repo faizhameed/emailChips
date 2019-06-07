@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "357612717de3f44270250a471285b7ec",
+    "revision": "6155e2f967bfd46bfce9859da6b0c54e",
     "url": "/emailChips/index.html"
   },
   {
-    "revision": "7b6de2fe751c9246d554",
+    "revision": "e8752af362cdd43f594a",
     "url": "/emailChips/static/css/main.8f364a99.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/emailChips/static/js/2.164617b5.chunk.js"
   },
   {
-    "revision": "7b6de2fe751c9246d554",
-    "url": "/emailChips/static/js/main.0849b6a6.chunk.js"
+    "revision": "e8752af362cdd43f594a",
+    "url": "/emailChips/static/js/main.75829a77.chunk.js"
   },
   {
     "revision": "da044cb3de44fd75ffa7",
