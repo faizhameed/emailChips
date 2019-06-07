@@ -69,7 +69,8 @@ handleKeyDown = (evt) => {
       }
       this.setState({
         emails: [...this.state.emails, email],
-        value: ''
+        value: '',
+        flag:0
       });    
   }
   }
@@ -139,10 +140,13 @@ handleDelete = (toBeRemoved) => {
   render() 
 
   {    
+    let classes= "tag-email ";
+    classes+= (this.state.flag==1)?"highlight":"no-high";
+
     const {error,emails}= this.state;
     return (<main className="wrapper">
-      
-    {emails.map(email => <div className="tag-email" key={email}>{email}
+       
+    {emails.map(email => <div className={classes} key={email}>{email}
     <button className="button" type="button"      
     onClick={() =>this.handleDelete(email)}>
       ×</button>

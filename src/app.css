@@ -49,7 +49,7 @@ body {
 }
 
 .tag-email {
-  background-color: #d4d5d6;
+ 
   display: inline-block;
   font-size: 14px;
   border-radius: 30px;
@@ -59,7 +59,13 @@ body {
   align-items: center;
   margin: 0 0.3rem 0.3rem 0;
 }
+.highlight:last-of-type{
+  background-color: aquamarine;
+}
 
+.no-high,.highlight{
+  background-color: #d4d5d6;
+}
 .tag-email > .button {
   background-color: white;
   width: 22px;
