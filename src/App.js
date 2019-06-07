@@ -4,10 +4,12 @@ import './app.css'
 
 class App extends React.Component {  
   
-state = {    value: '',
+state = {    
+value: '',
 emails:[],
 emailList:["faiz@gmail.com","arun@gmail.com","richard@gmail.com","khalidee@yahoo.com","mopetown@msn.com"],
-error:null
+error:null,
+flag:0
   } 
 
 
@@ -48,6 +50,8 @@ handleChange = (evt) => {
 
 };
   
+
+//
 handleKeyDown = (evt) => {  
   if (['Enter', 'Tab', ','].includes(evt.key))
    {    
@@ -69,7 +73,29 @@ handleKeyDown = (evt) => {
       });    
   }
   }
+   if (evt.keyCode === 8) {
+     if (this.state.flag ===1 && this.state.value===''){
+       var last =this.state.emails[this.state.emails.length-1];
+       this.setState({
+         flag:0,
+          emails: this.state.emails.filter(el=>el!==last)
+       })
+     }
+     else if (this.state.flag===0 && this.state.value===''){
+       this.setState({
+         flag:1
+       })
+     }
+        console.log('BACKSPACE was pressed');
+
+        // Call event.preventDefault() to stop the character before the cursor
+        // from being deleted. Remove this line if you don't want to do that.
+    }
   }
+
+
+
+  //copy and paste emails from documents
 
   handlePaste = (evt) => {  
     evt.preventDefault();
@@ -113,15 +139,16 @@ handleDelete = (toBeRemoved) => {
   render() 
 
   {    
+    const {error,emails}= this.state;
     return (<main className="wrapper">
       
-    {this.state.emails.map(email => <div className="tag-email" key={email}>{email}
+    {emails.map(email => <div className="tag-email" key={email}>{email}
     <button className="button" type="button"      
     onClick={() =>this.handleDelete(email)}>
       ×</button>
       
       </div>)}
-    <input list="emailList" id = "error1"className={'input ' + (this.state.error && ' has-error')}     
+    <input list="emailList" id = "error1"className={'input ' + (error && ' has-error')}     
     placeholder="Type or paste email addresses and press `Enter`..."      
     value={this.state.value}      
     onChange={this.handleChange}      
@@ -130,7 +157,7 @@ handleDelete = (toBeRemoved) => {
     /><datalist id="emailList">
     </datalist>
 
-     {this.state.error && <p id ="error2" className="error">{this.state.error}</p>} 
+     {error && <p id ="error2" className="error">{error}</p>} 
       </main>  
    );  
   
