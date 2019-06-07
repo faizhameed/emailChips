@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/emailChips/static/css/main.59a4c368.chunk.css",
+    "main.css": "/emailChips/static/css/main.8f364a99.chunk.css",
     "main.js": "/emailChips/static/js/main.0849b6a6.chunk.js",
     "main.js.map": "/emailChips/static/js/main.0849b6a6.chunk.js.map",
     "runtime~main.js": "/emailChips/static/js/runtime~main.85a70f2e.js",
@@ -8,8 +8,8 @@
     "static/js/2.164617b5.chunk.js": "/emailChips/static/js/2.164617b5.chunk.js",
     "static/js/2.164617b5.chunk.js.map": "/emailChips/static/js/2.164617b5.chunk.js.map",
     "index.html": "/emailChips/index.html",
-    "precache-manifest.531873c655703b422140b6455ab0f74a.js": "/emailChips/precache-manifest.531873c655703b422140b6455ab0f74a.js",
+    "precache-manifest.d28fa24c00f103eb0a4ac440eec0e4ab.js": "/emailChips/precache-manifest.d28fa24c00f103eb0a4ac440eec0e4ab.js",
     "service-worker.js": "/emailChips/service-worker.js",
-    "static/css/main.59a4c368.chunk.css.map": "/emailChips/static/css/main.59a4c368.chunk.css.map"
+    "static/css/main.8f364a99.chunk.css.map": "/emailChips/static/css/main.8f364a99.chunk.css.map"
   }
 }
