@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/emailChips/static/css/main.59a4c368.chunk.css",
+    "main.js": "/emailChips/static/js/main.dcf72a6a.chunk.js",
+    "main.js.map": "/emailChips/static/js/main.dcf72a6a.chunk.js.map",
+    "runtime~main.js": "/emailChips/static/js/runtime~main.85a70f2e.js",
+    "runtime~main.js.map": "/emailChips/static/js/runtime~main.85a70f2e.js.map",
+    "static/js/2.164617b5.chunk.js": "/emailChips/static/js/2.164617b5.chunk.js",
+    "static/js/2.164617b5.chunk.js.map": "/emailChips/static/js/2.164617b5.chunk.js.map",
+    "index.html": "/emailChips/index.html",
+    "precache-manifest.317f9ee8f2a1ae1a62597cb48de4b332.js": "/emailChips/precache-manifest.317f9ee8f2a1ae1a62597cb48de4b332.js",
+    "service-worker.js": "/emailChips/service-worker.js",
+    "static/css/main.59a4c368.chunk.css.map": "/emailChips/static/css/main.59a4c368.chunk.css.map"
+  }
+}
